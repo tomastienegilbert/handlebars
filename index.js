@@ -1,9 +1,10 @@
 const express = require("express");
 const app = express();
 const exphbs = require("express-handlebars");
+const chalk = require("chalk");
 
 app.listen(3000, () => {
-    console.log("El servidor está inicializado en el puerto http://localhost:3000");
+    console.log(chalk.green.bold("El servidor está inicializado en el puerto http://localhost:3000"));
 });
 
 // publicar la carpeta bootstrap
