@@ -1,0 +1,22 @@
+<div class="col-md-3 mt-4">
+    <div class="card">
+    <img src="/img/{{item}}.png" class="card-img-top" alt="Banana">
+    <div class="card-body">
+        <h5 class="card-title">{{item}}</h5>
+        
+        <form>
+            <fieldset enabled>
+                <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Cantidad" name="cantidad">
+                </div>
+                <div class="mb-3">
+                </div>
+                <button type="submit" class="btn btn-primary" data-fruta="{{item}}" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar</button>
+            </fieldset>
+        </form>
+
+        {{!-- <button type="button" class="btn btn-primary" data-fruta="{{item}}" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar</button> --}}
+    </div>
+    </div>
+
+</div>
