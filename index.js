@@ -11,7 +11,12 @@ app.listen(3000, () => {
 app.use("/bootstrap", express.static(__dirname + "/node_modules/bootstrap/dist"));
 
 // publicar archivos estaticos
-app.use("/assets", express.static(__dirname + "/assets"));
+app.use("/bootstrapcss", express.static(__dirname + "/node_modules/bootstrap/dist/css"))
+app.use("/bootstrapjs", express.static(__dirname + "/node_modules/bootstrap/dist/js"))
+app.use("/jquery", express.static(__dirname + "/node_modules/jquery/dist"))
+app.use("/json", express.static(__dirname + "/json"))
+app.use("/assets", express.static(__dirname + "/assets"))
+app.use("/css", express.static(__dirname + "/css"))
 
 app.set("view engine", "hbs");
 app.engine(
